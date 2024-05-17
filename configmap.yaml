@@ -15,9 +15,9 @@ data:
         server_name localhost;
         location / {
           root /usr/share/nginx/html;
-          index index.html index.htm test.html;
+          index index.html index.htm;
         }
-        auth_basic "Restricted Access";
+        auth_basic "Доступ ограничен";
         auth_basic_user_file /etc/nginx/.htpasswd;
       }
     }
